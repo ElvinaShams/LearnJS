@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+const user = prompt('Введите имя', '');
+
+if (user === 'Админ') {
+    const userPassword = prompt('Введите пароль', '');
+    if(userPassword === 'Я главный'){
+       alert('Здравствуйте!');
+    } else {
+        userPassword === '' || userPassword === null ? alert('Отменено') : alert('Неверный пароль');
+    }
+} else {
+    user === '' || user === null ? alert('Отменено') : alert('Я вас не знаю');
+}
+
+</script>
+

@@ -1,0 +1,1 @@
+const sumSalaries = (obj) => Object.values(obj).reduce((count, item)=> count + item , 0);
